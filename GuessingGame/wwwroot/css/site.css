@@ -1,0 +1,337 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+ul {
+    padding-right: 5%;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html, body {
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background: url(/Images/background.jpg) center no-repeat fixed;
+    letter-spacing: 5px;
+    overflow: hidden
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+.user {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+.row {
+    width: 100%;
+    text-align: center;
+    padding: 15% 0;
+    margin-right: 0;
+    margin-left: 0;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.front {
+    transition: all 0.5s linear 0s;
+    padding-top: 13%;
+    z-index: 2;
+}
+
+.back {
+    transition: all 0.5s linear 0.5s;
+    opacity: 0;
+}
+
+.row-content {
+    letter-spacing: initial;
+    background-color: black;
+}
+
+.row-content__text {
+    text-align: left;
+    margin-left: 24%;
+}
+
+@media (max-width: 1350px) {
+    .row-content__text {
+        margin-left: 0px;
+        text-align: center;
+    }
+}
+
+.row-content, .history {
+    padding: 10px;
+    border: 2px solid #007f9a;
+    border-radius: 15px;
+}
+
+.welcome-header {
+    color: white;
+}
+
+.google img {
+    width: 50px;
+    height: 50px;
+}
+
+.winner, .loser {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.winner {
+    color: lawngreen;
+}
+
+.loser {
+    color: red;
+}
+
+.guess-number-form {
+    padding: 2% 0 5% 0;
+}
+
+.guess-number-form__group input {
+    font-weight: 700;
+    width: 50px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.guess-number-form__group :last-child {
+    margin-right: 0;
+}
+
+.tries-left {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+
+.history {
+    padding: 10px;
+    height: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.history__name {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.history__list {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: justify;
+    padding-right: 40px;
+}
+
+    .history__list li {
+        position: relative;
+    }
+
+.list__m {
+    position: absolute;
+    left: 15%;
+}
+
+.list__p {
+    position: absolute;
+    right: 15%;
+}
+
+.open__img {
+    width: 50px;
+    height: 50px;
+}
+
+.open {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+}
+
+
+/*.leaderboard {
+    width: 0px;
+}*/
+
+.leaderboard {
+    width: 0px;
+    height: 100%;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    border-right: 2px solid #007f9a;
+    padding-top: 20px 0;
+    transition: all 0.5s 0s;
+    background-color: black;
+}
+
+.close {
+    position: absolute;
+    right: 5px;
+    z-index: 4;
+    color: #e9ecef;
+}
+
+.leaderboard__name {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 4px solid #007f9a;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+    .leaderboard__name span {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: initial;
+    }
+
+.leaderboard__item {
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0 15px 10px 10px;
+    letter-spacing: initial;
+}
+
+@media (max-width: 520px) {
+    .leaderboard {
+        padding-top: 10px 0;
+    }
+
+    .leaderboard__name {
+        font-size: 15px;
+        border-bottom: 2px solid #007f9a;
+        margin-bottom: 15px;
+        padding-top: 15px;
+    }
+
+        .leaderboard__name span {
+            font-size: 10px;
+        }
+
+    .leaderboard__item {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 610px) {
+
+    .open {
+        position: absolute;
+        top: 2%;
+        left: 1%;
+        transform: translateY(-50%) rotate(90deg);
+    }
+
+    div.logout {
+        top: 3px;
+        right: 1%;
+    }
+}
+
+.logout__img {
+    width: 25px;
+    height: 25px;
+}
+
+.logout {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}

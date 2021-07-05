@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="logout">
+    <a asp-controller="Account" asp-action="Logout">
+        <img class="logout__img" src="~/Images/logout.png">
+    </a>
+</div>
+
+<div class="open">
+    <a href="#">
+        <img class="open__img" src="~/Images/arrow.png">
+    </a>
+</div>
+
+<div class="leaderboard">
+    <button type="button" class="btn-close btn-close-white close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="leaderboard__name">Leaderboard<br><span>play at least 2 games to see your name here!</span></div>
+</div>
+
+<div class="text-white user">@User.Identity.Name</div>
+
+<form action="#" class="guess-number-form" method="post">
+    <div class="d-flex p-4 justify-content-center flex-nowrap form-group guess-number-form__group">
+        <input class="d-block form-control form-control-lg" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="digit1" value="" />
+        <input class="d-block form-control form-control-lg" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="digit2" value="" />
+        <input class="d block form-control form-control-lg" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="digit3" value="" />
+        <input class="d block form-control form-control-lg" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="digit4" value="" />
+    </div>
+    <div class="btn-and-tries">
+        <div>
+            <button type="button" id="guess-game-btn" class="guess btn btn-primary shadow-none w-25 d-block m-auto">Guess</button>
+        </div>
+        <div class="tries-left">
+            Tries left: <span>8</span>
+        </div>
+    </div>
+</form>
+<div class="history">
+    <p class="history__name">History</p>
+    <ol class="history__list list">
+    </ol>
+</div>
